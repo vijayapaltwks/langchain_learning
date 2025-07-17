@@ -1,0 +1,14 @@
+# Chainlit configuration file
+# Enable authentication and SQLite persistence for chat history side panel
+
+[persistence]
+provider = "sqlite"
+
+[auth]
+# Enable password authentication for local development
+method = "password"
+
+# Firestore settings (adjust as needed)
+[firestore]
+project_id = "v-llm-chat-firestore"
+collection_name = "chat_history"
